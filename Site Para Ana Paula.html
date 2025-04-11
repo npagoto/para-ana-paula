@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz do Nosso Amor</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #2e003e, #000);
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .title {
+      font-size: 3em;
+      font-weight: bold;
+      color: #ff9bff;
+      margin-top: 60px;
+    }
+    .hearts {
+      font-size: 2em;
+      color: #ffb3ff;
+      position: absolute;
+      animation: float 4s ease-in-out infinite;
+    }
+    .btn {
+      margin-top: 40px;
+      background-color: #a64ca6;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="title">QUIZ DO NOSSO AMOR</div>
+
+  <div id="hearts">
+    <div class="hearts" style="top: 20%; left: 10%;">❤️</div>
+    <div class="hearts" style="top: 40%; left: 80%;">💜</div>
+    <div class="hearts" style="top: 60%; left: 30%;">💕</div>
+    <div class="hearts" style="top: 80%; left: 70%;">💖</div>
+  </div>
+
+  <button class="btn" onclick="startQuiz()">Começar</button>
+
+  <script>
+    function startQuiz() {
+      window.location.href = "quiz1.html";
+    }
+  </script>
+</body>
+</html>

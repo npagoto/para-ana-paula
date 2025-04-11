@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pergunta 2</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #2e003e, #000);
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      color: #ffb3ff;
+      margin-bottom: 40px;
+    }
+    .option {
+      display: block;
+      background-color: #a64ca6;
+      margin: 10px auto;
+      padding: 15px;
+      width: 60%;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: none;
+    }
+    .option:hover {
+      background-color: #cc66cc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Qual a cor do cropped que você estava usando no dia que nos conhecemos?</h2>
+
+  <button class="option" onclick="responder(false)">Vermelho</button>
+  <button class="option" onclick="responder(false)">Preto</button>
+  <button class="option" onclick="responder(true)">Azul</button>
+  <button class="option" onclick="responder(false)">Branco</button>
+
+  <script>
+    function responder(correto) {
+      if (correto) {
+        window.location.href = "quiz3.html";
+      } else {
+        alert("Hmm... tenta de novo, tá fácil! 💙");
+      }
+    }
+  </script>
+</body>
+</html>

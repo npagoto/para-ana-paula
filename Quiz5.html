@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pergunta Final</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #2e003e, #000);
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      color: #ffb3ff;
+      margin-bottom: 40px;
+    }
+    .option {
+      display: block;
+      background-color: #a64ca6;
+      margin: 10px auto;
+      padding: 15px;
+      width: 60%;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: none;
+    }
+    .option:hover {
+      background-color: #cc66cc;
+    }
+    .hidden {
+      display: none;
+    }
+    .message {
+      margin-top: 40px;
+      font-size: 1.4em;
+      color: #ff6fcf;
+    }
+    .btn {
+      margin-top: 20px;
+      background-color: #a64ca6;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Qual time o nosso filho vai torcer?</h2>
+
+  <button class="option" onclick="respostaErrada()">Palmeiras</button>
+  <button class="option" onclick="respostaCerta()">Corinthians</button>
+
+  <div id="mensagem-erro" class="message hidden">
+    PEEEEEEEN - VOCÊ ERROU, MAS SE SAIU BEM NAS OUTRAS, PARABÉNS !!!!!<br>
+    <button class="btn" onclick="continuar()">Continuar</button>
+  </div>
+
+  <script>
+    function respostaErrada() {
+      document.getElementById("mensagem-erro").classList.remove("hidden");
+    }
+    function respostaCerta() {
+      continuar();
+    }
+    function continuar() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

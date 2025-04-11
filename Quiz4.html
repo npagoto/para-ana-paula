@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pergunta 4</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #2e003e, #000);
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      color: #ffb3ff;
+      margin-bottom: 40px;
+    }
+    .option {
+      display: block;
+      background-color: #a64ca6;
+      margin: 10px auto;
+      padding: 15px;
+      width: 60%;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: none;
+    }
+    .option:hover {
+      background-color: #cc66cc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Qual foi o mês e o ano que eu lesionei o pé?</h2>
+
+  <button class="option" onclick="responder(false)">12/2023</button>
+  <button class="option" onclick="responder(true)">01/2024</button>
+  <button class="option" onclick="responder(false)">02/2024</button>
+  <button class="option" onclick="responder(false)">03/2024</button>
+
+  <script>
+    function responder(correto) {
+      if (correto) {
+        window.location.href = "quiz5.html";
+      } else {
+        alert("Ai ai, foi mais recente que isso, hein! 😉");
+      }
+    }
+  </script>
+</body>
+</html>
